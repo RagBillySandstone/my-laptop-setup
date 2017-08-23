@@ -1,0 +1,28 @@
+---
+  - name: apt-update everything
+    apt:
+      upgrade: dist
+      update_cache: yes
+      cache_valid_time: 3000
+    # become: true
+
+  - name: Install some of my favorite softwares
+    apt:
+      name: "{{ item }}"
+      state: latest
+    with_items: "{{ apt_install_packages }}"
+
+  - name: Remove softwares I don't need and purge their config files
+    apt:
+      name: "{{ item }}"
+      state: absent
+      purge: yes
+    with_items: "{{ apt_purge_packages }}"
+
+  - name: Autoremove unnecessary packages
+    apt:
+      autoremove: yes 
+
+  - name: Install the latest Atom
+    apt:
+      deb: https://github.com/atom/atom/releases/download/v{{ atom_version }}/atom-amd64.deb

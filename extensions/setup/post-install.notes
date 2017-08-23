@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Check if root
+# setup.sh needs to make sure paths are okay we need to run Ansible as a normal
+[[ "$(whoami)" == "root" ]] && msg_exit "Please run as an unprivileged user."
+
+sudo apt-get -y install build-essential python-dev python-setuptools
+sudo easy_install pip
+
+mkdir ~/Code
+cd Code
+git clone https://github.com/enginyoyen/ansible-best-practises/
+/bin/bash ~/Code/ansible-best-practises/extensions/setup/setup.sh

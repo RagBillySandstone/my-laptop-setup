@@ -1,0 +1,17 @@
+---
+apt_install_packages:
+                        - chromium-browser
+                        - git
+                        - terminator
+                        - vlc
+                        - vim
+
+
+apt_purge_packages:
+                        - firefox
+                        - thunderbird
+                        - pidgin
+                        - parole
+                        - libreoffice*
+
+atom_version: 1.19.2
