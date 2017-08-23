@@ -1,2 +1,3 @@
 ---
   - include: update-everything.yml
+  - include: deploy-software.yml
