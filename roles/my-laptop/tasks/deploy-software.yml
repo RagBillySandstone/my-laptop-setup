@@ -31,6 +31,6 @@
     apt:
       autoremove: yes
 
-  - name: Install the latest Atom
+  - name: Install Atom v{{ atom_version }}
     apt:
       deb: https://github.com/atom/atom/releases/download/v{{ atom_version }}/atom-amd64.deb

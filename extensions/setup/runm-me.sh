@@ -10,5 +10,5 @@ sudo easy_install pip aptitude
 
 mkdir ~/Code
 cd Code
-git clone https://github.com/enginyoyen/ansible-best-practises/
-/bin/bash ~/Code/ansible-best-practises/extensions/setup/setup.sh
+git clone https://github.com/RagBillySandstone/my-laptop-setup.git
+/bin/bash ~/Code/my-laptop-setup/extensions/setup/setup.sh
