@@ -1,4 +1,8 @@
 ---
+apt_repos:
+  - 'deb http://deb.torproject.org/torproject.org xenial main'
+  - 'deb-src http://deb.torproject.org/torproject.org xenial main'
+
 apt_install_packages:
                         - chromium-browser
                         - git
@@ -6,7 +10,8 @@ apt_install_packages:
                         - vlc
                         - vim
                         - ttf-anonymous-pro
-
+                        - tor
+                        - deb.torproject.org-keyring
 
 apt_purge_packages:
                         - firefox
@@ -16,4 +21,4 @@ apt_purge_packages:
                         - libreoffice*
 
 # The version number of Atom.
-atom_version: 1.19.2
+atom_version: 1.19.3
