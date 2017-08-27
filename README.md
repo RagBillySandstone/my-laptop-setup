@@ -6,7 +6,7 @@ An Ansible playbook designed to be run immediately after a fresh install of Xubu
 
 To run it, download the bash script, make it executable if necessary, then run it as an *unprivileged* user. The script will ask for your `sudo` password when it needs to.
 ```
-wget https://github.com/RagBillySandstone/my-laptop-setup/blob/master/extensions/setup/run-me.sh
+wget https://raw.githubusercontent.com/RagBillySandstone/my-laptop-setup/master/extensions/setup/run-me.sh
 /bin/bash ./run-me.sh
 ```
 This playbook has been tested with Xubuntu 16.04.3.
