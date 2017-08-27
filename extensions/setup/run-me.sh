@@ -8,7 +8,7 @@
 sudo apt-get update
 
 # Install packages necessary to setup the environment
-sudo apt-get -y install build-essential python-dev python-setuptools aptitude
+sudo apt-get -y install build-essential python-dev python-setuptools aptitude git
 sudo easy_install pip
 
 mkdir ~/Code
