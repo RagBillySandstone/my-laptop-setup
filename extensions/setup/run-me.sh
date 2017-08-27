@@ -12,7 +12,7 @@ sudo apt-get -y install build-essential python-dev python-setuptools aptitude
 sudo easy_install pip
 
 mkdir ~/Code
-cd Code
+cd ~/Code
 git clone https://github.com/RagBillySandstone/my-laptop-setup.git
 /bin/bash ~/Code/my-laptop-setup/extensions/setup/setup.sh
 
