@@ -13,4 +13,4 @@ cd Code
 git clone https://github.com/RagBillySandstone/my-laptop-setup.git
 /bin/bash ~/Code/my-laptop-setup/extensions/setup/setup.sh
 
-ansible-playbook -K ./workstation-setup.yml
+sudo ansible-playbook -K ./my-laptop-setup/workstation-setup.yml
