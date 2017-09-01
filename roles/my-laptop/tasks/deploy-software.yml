@@ -1,8 +1,8 @@
 ---
   - name: Add the torproject keys
     apt_key:
-      keyserver: https://keys.gnupg.net
-      id: A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
+      keyserver: 'keys.gnupg.net'
+      id: 'A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89'
 
   - name: Add outside repositories
     apt_repository:

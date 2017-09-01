@@ -1,0 +1,18 @@
+---
+  - name: set git core.editor
+    git_config:
+      name: core.editor
+      scope: global
+      value: '{{ git_editor }}'
+
+  - name: set git user.name
+    git_config:
+      name: user.name
+      scope: global
+      value: '{{ git_user }}'
+
+  - name: set git user.email
+    git_config:
+      name: user.email
+      scope: global
+      value: '{{ git_email }}'
