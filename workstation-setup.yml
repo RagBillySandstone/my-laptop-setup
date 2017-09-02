@@ -6,6 +6,6 @@
   connection: local
   gather_facts: True
   roles:
-    # - my-laptop
-    # - suzuki-shunsuke.docker-ubuntu
+    - my-laptop
+    - suzuki-shunsuke.docker-ubuntu
     - gantsign.atom
