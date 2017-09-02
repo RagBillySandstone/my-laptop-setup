@@ -1,4 +1,7 @@
 ---
+# These tasks are deprecated
+# Use suzuki-shunsuke.docker-ubuntu instead
+
   - name: Remove any existing Docker installations
     apt:
       name: "{{ item }}"

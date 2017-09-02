@@ -6,5 +6,3 @@
   - include: setup-git.yml
     become: yes
     become: stephen
-
-  - include: add-docker.yml

@@ -16,4 +16,6 @@ cd ~/Code
 git clone https://github.com/RagBillySandstone/my-laptop-setup.git
 /bin/bash ~/Code/my-laptop-setup/extensions/setup/setup.sh
 
+sudo ansible-galaxy install -r  ~/Code/my-laptop-setup/requirements.yml
+
 sudo ansible-playbook ~/Code/my-laptop-setup/workstation-setup.yml
