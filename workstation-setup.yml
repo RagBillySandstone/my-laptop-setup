@@ -4,6 +4,6 @@
 - name: Make my laptop the way I like it
   hosts: localhost
   connection: local
-  gather_facts: False
+  gather_facts: True
   roles:
     - my-laptop
